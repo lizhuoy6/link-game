@@ -29,22 +29,19 @@ def getch():
 if __name__ == '__main__':
     # """python lixiang/demo.py"""
 
-    # """键盘输入的小写字母与数组坐标之间关系的dict"""
     posDict = {'a': (0,0), 'b': (0,1), 'c': (0,2), 'd': (0,3),
                'e': (1,0), 'f': (1,1), 'g': (1,2), 'h': (1,3),
                'i': (2,0), 'j': (2,1), 'k': (2,2), 'l': (2,3),
                'm': (3,0), 'n': (3,1), 'o': (3,2), 'p': (3,3),
                'q': 'over'}
 
-    # """初始化4x4数组，并显示"""
     matrix = Matrix(4,4)
 
-    # """初始化坐标变量"""
     pos1 = (-1,-1)
     pos2 = (-1,-1)
     inputPosition = (-1,-1)
 
-    totalTime = 60 #设定有戏总时间
+    totalTime = 60
     startTime = time.time()
 
     while(True):
